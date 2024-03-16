@@ -18,3 +18,18 @@ console.log("Test 3: Copy", copyOfArray);
 // A shallow copy creates a new obj or array and inserts references to the same elements found in the original.
 // It duplicates the structure of original elements but not the actual elements themselves.
 // Any nested objects or arrays within original will still be referenced in the copied object.
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, d: 4, e: 5 };
+const mergedObject = {...obj1, ...obj2};
+console.log("Test 4: ", mergedObject)
+
+// 
+
+function sum(a, b, c) {
+    return a + b + c;
+  }
+  
+  const numbers = [1, 2, 3];
+  const result = sum(...numbers); // total is 6
+  console.log(result)
