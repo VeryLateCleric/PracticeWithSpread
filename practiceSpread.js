@@ -8,3 +8,13 @@ const arrayMerge1 = [1, 2, 3, 4];
 const arrayMerge2 = [5, 6, 7, 8];
 const mergedArrays = [...arrayMerge1, ...arrayMerge2];
 console.log("Test 2:", mergedArrays)
+// Here we concatenate the arrays together by spreading each element of each array into a new array.
+
+// We can also use spread to make a shallow copy of an array.
+const originalArray = [ 1, 2, 3, 4];
+const copyOfArray = [...originalArray]; //Will make a copy of originalArray that read [1, 2, 3, 4]
+console.log("Test 3: Original", originalArray);
+console.log("Test 3: Copy", copyOfArray);
+// A shallow copy creates a new obj or array and inserts references to the same elements found in the original.
+// It duplicates the structure of original elements but not the actual elements themselves.
+// Any nested objects or arrays within original will still be referenced in the copied object.
